@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Tungsten</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    color: #1d1d1f; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1c1c1e; }
+    a { color: #6cb2ff; }
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  h3 { font-size: 1rem; margin-top: 1.5rem; }
+  .tagline { opacity: 0.7; }
+</style>
+</head>
+<body>
+<h1>Tungsten — Support</h1>
+<p class="tagline">Photo to textured 3D on your Mac.</p>
+
+<p>Tungsten is a native macOS app for Apple silicon. Open or drop a product photo, optionally remove the background, tap Generate, wait while TRELLIS.2 runs on this Mac, then orbit the preview and export a GLB.</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>How do I try it without my own photo?</h3>
+<p>Click <strong>Sample</strong> under the photo well, or choose <strong>File → Use Sample</strong>. That loads the bundled pitcher photo.</p>
+
+<h3>Generation never starts / it asks for a license</h3>
+<p>Image features use Meta DINOv3, which is not MIT. Accept the DINOv3 License Agreement on first launch (or later from Settings → General). Decline leaves the rest of the app usable; Generate stays blocked until you accept.</p>
+
+<h3>Why is there a large download?</h3>
+<p>The App Store app does not include the AI weights (several gigabytes). On first generate, Tungsten downloads them over HTTPS from Hugging Face, stores them on this Mac, and checks SHA-256 before running. About 6&nbsp;GB for Fast (512³). Optional High quality (1024³) adds more. You can postpone the download.</p>
+
+<h3>How long does Generate take?</h3>
+<p>A typical Fast (512³) run is several minutes on Apple silicon. High quality is slower. You can cancel at any time.</p>
+
+<h3>What Mac do I need?</h3>
+<p>Apple silicon is required. Intel Macs and Rosetta are not supported. 24&nbsp;GB of unified memory is recommended. High quality (1024³) stays locked unless this Mac has 36&nbsp;GB or more.</p>
+
+<h3>Are my photos uploaded?</h3>
+<p>No. After the model pack is present, inference stays on this Mac. Photos are not sent to a server. There is no account and no tracking.</p>
+
+<h3>What can I export?</h3>
+<p>GLB, USDZ, OBJ, STL, or PLY. You own exported meshes. Tungsten claims no copyright on generated files.</p>
+
+<h3>Where are my jobs and models stored?</h3>
+<p>Inside the app container (Application Support). Settings → General has <strong>Show in Finder</strong> for the models folder.</p>
+
+<h2>Contact</h2>
+<p>Tungsten is published by druidori s.r.o.<br>
+Found a bug, or a photo that does not convert well? Email
+<a href="mailto:info@druidori.com">info@druidori.com</a> — attaching the photo helps.</p>
+</body>
+</html>

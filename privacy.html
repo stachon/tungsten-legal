@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Tungsten</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    color: #1d1d1f; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1c1c1e; }
+    a { color: #6cb2ff; }
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .updated { opacity: 0.6; font-size: 0.9rem; }
+  .summary { font-size: 1.1rem; font-weight: 600; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.5rem 0; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Tungsten</h1>
+<p class="updated">Last updated: September 14, 2026</p>
+
+<h2>Summary</h2>
+<p class="summary">Tungsten collects no data. None.</p>
+
+<h2>Details</h2>
+<p>Tungsten is a native macOS app that turns a product photo into a textured 3D model on this Mac.</p>
+<ul>
+  <li><strong>No data collection.</strong> The app does not collect, store, or transmit any personal information, usage data, analytics, or crash reports.</li>
+  <li><strong>Photos stay on this Mac.</strong> Photos you open and meshes you generate are processed only on this computer. They are not uploaded to a server we operate.</li>
+  <li><strong>No accounts.</strong> There is nothing to sign up for and nothing to log in to.</li>
+  <li><strong>No third-party trackers.</strong> There are no ads, no analytics SDKs, and no crash-log upload.</li>
+  <li><strong>Local storage only.</strong> Photos, jobs, exports, and preferences live in the app’s sandbox on this Mac (and in backups you control). Deleting the app deletes them.</li>
+</ul>
+
+<h2>Photos and generated files</h2>
+<p>When you open or drop a photo, the app copies it into its sandboxed Application Support folder so generation can run. Optional background cutout uses Apple Vision on this Mac. The resulting GLB and job files stay in that folder until you export or delete them.</p>
+<p>You own exported meshes. Tungsten claims no copyright on generated files. Nothing in this pipeline is sent to a generation server.</p>
+
+<h2>Model pack download</h2>
+<p>The App Store binary does not include TRELLIS.2 or DINOv3 weight files. On first generate, the app can download those files over HTTPS from Hugging Face (the host listed in the bundled manifest), store them in Application Support, and refuse to generate until every SHA-256 checksum matches.</p>
+<p>That download is model weights (data), not executable code. You can postpone it; Generate stays disabled until the required files are present and verified.</p>
+<p>After the pack is installed, inference uses Apple silicon (Metal). There is no Python runtime and no cloud generation.</p>
+
+<h2>DINOv3</h2>
+<p>Image features use Meta DINOv3. Built with DINOv3. Those weights are licensed under the DINOv3 License Agreement, which is not MIT. The agreement is shown in-app before those files download. Tungsten does not relicense DINOv3 and does not send your photos to Meta.</p>
+
+<h2>Preferences</h2>
+<p>The app stores on-device preferences (onboarding, DINOv3 acceptance, quality, background cutout) in UserDefaults inside the app container. Those values do not leave the Mac.</p>
+
+<h2>Children</h2>
+<p>The app is suitable for all ages and, consistent with the above, collects no data from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy ever changes, the updated version will be posted at this URL and the “Last updated” date will change.</p>
+
+<h2>Contact</h2>
+<p>Tungsten is published by druidori s.r.o.<br>
+Questions? Contact: <a href="mailto:info@druidori.com">info@druidori.com</a></p>
+</body>
+</html>
